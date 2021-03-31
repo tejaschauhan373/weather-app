@@ -21,6 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
                     let node = document.createTextNode("Error: " + data.Error);
                     msg2.textContent = "";
                     msgHead.textContent = "";
+                    paragraphMessage.textContent = "";
                     paragraphMessage.appendChild(node);
                     // paragraphMessage.textContent = ;
                 }
