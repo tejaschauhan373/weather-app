@@ -53,4 +53,6 @@
   // will run on localhost:3000
 
 
+## Weather App
+
 ![weather-app](https://github.com/tejaschauhan373/weather-app/blob/master/images/weather_app.png)
