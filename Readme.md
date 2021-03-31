@@ -53,4 +53,4 @@
   // will run on localhost:3000
 
 
-![weather-app](http://url/to/img.png)
+![weather-app](https://github.com/tejaschauhan373/weather-app/blob/master/images/weather_app.png)
