@@ -1,6 +1,3 @@
-console.log("JS files are loaded.")
-
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 var paragraphMessage = document.querySelector('#message-1')
@@ -20,17 +17,15 @@ weatherForm.addEventListener('submit', (e) => {
     fetch(`/weather?address=${location}`).then((response) => {
         response.json().then((data) => {
             if (data.Error) {
-                console.log(data.Error);
                 if (paragraphMessage) {
                     let node = document.createTextNode("Error: " + data.Error);
                     msg2.textContent = "";
+                    msgHead.textContent = "";
                     paragraphMessage.appendChild(node);
                     // paragraphMessage.textContent = ;
                 }
             } else {
-                console.log(data);
                 if (paragraphMessage) {
-                    console.log(data["Data"]);
                     paragraphMessage.textContent = "";
                     msg2.textContent = "";
                     msgHead.textContent = `Location: ${data["Data"]["location"]}`;
@@ -64,5 +59,4 @@ weatherForm.addEventListener('submit', (e) => {
             }
         })
     })
-    console.log(location);
 })
