@@ -10,7 +10,7 @@
 
    ```
    $ cd weather-app\
-   $ pip i
+   $ npm i
    ```
 
 3. set up config.json.
